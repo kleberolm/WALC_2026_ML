@@ -10,6 +10,16 @@ Desde la carpeta raíz del proyecto, instala las dependencias:
 uv sync --locked
 ```
 
+El notebook del día 3 utiliza XGBoost. En macOS, instala también el runtime
+OpenMP con Homebrew si aún no está disponible:
+
+```bash
+brew install libomp
+```
+
+Esta biblioteca la necesita el componente compilado de XGBoost, incluso al
+usarlo desde Python. Consulta la [documentación de XGBoost](https://xgboost.readthedocs.io/en/stable/build.html).
+
 Abre la carpeta del proyecto en VS Code. Si tienes el comando `code` disponible, puedes usar:
 
 ```bash
